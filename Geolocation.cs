@@ -29,7 +29,7 @@ namespace GeicoERAService
      
         public int GetLocation()
         {
-            return
+            return 0;
         }
     }
             

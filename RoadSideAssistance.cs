@@ -10,7 +10,7 @@ namespace GeicoERAService
     {
         public RoadSideAssistance() { }
 
-        public 
+         
         public SortedSet<Assistant> findNearestAssistants(Geolocation geolocation, int limit)
         {
             SortedSet<Assistant> setAssists = new SortedSet<Assistant>();
@@ -44,7 +44,7 @@ namespace GeicoERAService
 
         public void updateAssistantLocation(Assistant assistant, Geolocation assistantLocation)
         {
-            assistant.Driverlocation= assistantLocation.g
+            //assistant.Driverlocation= assistantLocation.
 
             throw new NotImplementedException();
         }

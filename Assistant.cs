@@ -9,16 +9,16 @@ namespace GeicoERAService
 {
     public  class Assistant
     {
-        public string? DriverName;
-        public int DriverID;
-        public double Driverlocation;
+        public string? AsssistName;
+        public int AssistID;
+        public double Assistlocation;
   
         public Assistant GetAssistant()
         {
             Random rnd = new Random();
             Assistant assistant = new Assistant();
-            assistant.DriverName = "Assistant"+ rnd.Next(); 
-            assistant.DriverID = rnd.Next();
+            assistant.AsssistName = "Assistant"+ rnd.Next(); 
+            assistant.AssistID = rnd.Next();
             return assistant;
   
         }

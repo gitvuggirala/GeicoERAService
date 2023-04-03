@@ -1,9 +1,6 @@
 # GeicoERAService
 
 
-Build instructions
-
-
 
 Assumptions:
 
@@ -28,3 +25,5 @@ dotnet msbuild GeicoERAService.sln -property:configuration=release
 
 Run the Applicaiton
 GeicoERAService.exe
+
+![image](https://user-images.githubusercontent.com/104606095/229423181-ef0ac0b9-2d02-4d34-8cce-2d238f0e97d3.png)

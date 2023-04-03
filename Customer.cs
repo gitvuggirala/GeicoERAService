@@ -8,16 +8,21 @@ namespace GeicoERAService
 {
     public class Customer
     {
-       public  string? CustomerName;
-       public  string? CustomerPhone;
-       public  string? CustomerAddress;
-        public Customer GetCustomer()
+       public  string CustomerName { get; set; }
+       public  string CustomerPhone { get; set; }
+       public int CustomerID{ get; set; }
+        public Customer (int customerID, string CustomerName, string CustomerPhone)
         {
+            this.CustomerName = CustomerName;
+            this.CustomerPhone = CustomerPhone;
+            this.CustomerID = customerID;
+             
+        }
 
-            Customer custDetails = new Customer { CustomerName = "test", CustomerPhone = "312-234-5679", CustomerAddress = "test" };
-            return custDetails;
-
-
+        public Geolocation CustomerCurrentLocation()
+        {
+            Geolocation geolocation = new Geolocation();
+            return geolocation.GetCurrentLocation();
         }
 
     }
